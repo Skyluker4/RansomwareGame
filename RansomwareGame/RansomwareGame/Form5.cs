@@ -16,8 +16,11 @@ namespace RansomwareGame
         {
             InitializeComponent();
 
-            // Run the final payload
-            kill();
+            //pause for 5 seconds
+            System.Threading.Thread.Sleep(5000);
+
+            timer1.Interval = 5000;
+            timer1.Start();
         }
 
         void kill() {
@@ -30,6 +33,12 @@ namespace RansomwareGame
 
             // Quit GUI
             Environment.Exit(0);
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            // Run the final payload
+            kill();
         }
     }
 }

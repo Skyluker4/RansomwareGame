@@ -173,6 +173,21 @@
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </COMReference>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nerdEmoji.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\spill.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sweating-wet.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\laugh-at-this-user-ryan-gosling %281%29.gif" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PostBuildEvent>

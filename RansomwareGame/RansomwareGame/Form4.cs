@@ -18,6 +18,8 @@ namespace RansomwareGame
         private Timer timer1;
         private IContainer components;
         private Label label2;
+        private PictureBox pictureBox1;
+        private ImageList imageList1;
         private DateTimePicker dateTimePicker1;
 
         public Form4()
@@ -39,26 +41,29 @@ namespace RansomwareGame
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.label2 = new System.Windows.Forms.Label();
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Font = new System.Drawing.Font("Comic Sans MS", 10F);
-            this.dateTimePicker1.Location = new System.Drawing.Point(570, 311);
+            this.dateTimePicker1.Font = new System.Drawing.Font("Comic Sans MS", 20F);
+            this.dateTimePicker1.Location = new System.Drawing.Point(460, 310);
             this.dateTimePicker1.MinDate = new System.DateTime(1970, 1, 1, 0, 0, 0, 0);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.ShowUpDown = true;
-            this.dateTimePicker1.Size = new System.Drawing.Size(228, 26);
+            this.dateTimePicker1.Size = new System.Drawing.Size(448, 45);
             this.dateTimePicker1.TabIndex = 0;
             this.dateTimePicker1.Value = new System.DateTime(1970, 1, 1, 0, 0, 0, 0);
             this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
             // button1
             // 
-            this.button1.Font = new System.Drawing.Font("Comic Sans MS", 10F);
+            this.button1.Font = new System.Drawing.Font("Comic Sans MS", 20F);
             this.button1.Location = new System.Drawing.Point(12, 636);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(1321, 34);
+            this.button1.Size = new System.Drawing.Size(1321, 49);
             this.button1.TabIndex = 2;
             this.button1.Text = "Submit";
             this.button1.UseVisualStyleBackColor = true;
@@ -67,10 +72,10 @@ namespace RansomwareGame
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Comic Sans MS", 15F);
-            this.label1.Location = new System.Drawing.Point(6, 202);
+            this.label1.Font = new System.Drawing.Font("Comic Sans MS", 20F);
+            this.label1.Location = new System.Drawing.Point(12, 155);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(46, 28);
+            this.label1.Size = new System.Drawing.Size(62, 38);
             this.label1.TabIndex = 3;
             this.label1.Text = "File";
             // 
@@ -89,13 +94,28 @@ namespace RansomwareGame
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Comic Sans MS", 12F);
-            this.label2.Location = new System.Drawing.Point(366, 412);
+            this.label2.Font = new System.Drawing.Font("Comic Sans MS", 20F);
+            this.label2.Location = new System.Drawing.Point(104, 376);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(651, 92);
+            this.label2.Size = new System.Drawing.Size(1125, 152);
             this.label2.TabIndex = 5;
             this.label2.Text = resources.GetString("label2.Text");
             this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // imageList1
+            // 
+            this.imageList1.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
+            this.imageList1.ImageSize = new System.Drawing.Size(16, 16);
+            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::RansomwareGame.Properties.Resources.image0;
+            this.pictureBox1.Location = new System.Drawing.Point(556, 89);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(499, 501);
+            this.pictureBox1.TabIndex = 6;
+            this.pictureBox1.TabStop = false;
             // 
             // Form4
             // 
@@ -105,9 +125,11 @@ namespace RansomwareGame
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.pictureBox1);
             this.Name = "Form4";
             this.Text = "When did you make that file again?";
             this.Load += new System.EventHandler(this.Form4_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

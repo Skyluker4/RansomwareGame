@@ -19,7 +19,7 @@ namespace RansomwareGame
             // Decrypt
             var userDirectory = Environment.GetFolderPath(Environment.SpecialFolder.UserProfile);
             var exePath = userDirectory + "\\WannaPiss\\Ransomwarer.exe";
-            System.Diagnostics.Process.Start(exePath, "d '*'");
+            System.Diagnostics.Process.Start(exePath, "d *");
         }
     }
 }
