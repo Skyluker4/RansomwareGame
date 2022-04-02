@@ -36,10 +36,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Comic Sans MS", 150F);
-            this.label1.Location = new System.Drawing.Point(23, 9);
+            this.label1.Font = new System.Drawing.Font("Comic Sans MS", 700F);
+            this.label1.Location = new System.Drawing.Point(58, -294);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(227, 279);
+            this.label1.Size = new System.Drawing.Size(1057, 1301);
             this.label1.TabIndex = 0;
             this.label1.Text = "L";
             // 
