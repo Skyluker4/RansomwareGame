@@ -24,7 +24,7 @@ namespace RansomwareGame
             InitializeComponent();
             label1.Text = GameState.currentFile.fileName;
 
-            timer1.Interval = 1000;
+            timer1.Interval = GameState.tickTime;
             timer1.Start();
         }
 
@@ -129,7 +129,7 @@ namespace RansomwareGame
         {
             progressBar1.Value++;
 
-            if (progressBar1.Value == 100)
+            if (progressBar1.Value == GameState.waitTime)
             {
                 timer1.Stop();
                 GameState.levelLose();

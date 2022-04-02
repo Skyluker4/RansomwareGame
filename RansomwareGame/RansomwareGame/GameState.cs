@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using WMPLib;
@@ -19,6 +20,8 @@ namespace RansomwareGame
         public static int lives = 3;
         public static int score = 0;
 
+        public static int waitTime = 100;
+        public static int tickTime = 1000;
         public static float winFactorThreshold = 0.2f;
 
         public static Metadata currentFile = null;
