@@ -103,5 +103,15 @@ namespace RansomwareGame
             units = 0.5f;
             unitLabelText = "nibbles";
         }
+
+        private void Form3_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

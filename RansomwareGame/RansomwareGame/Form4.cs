@@ -17,6 +17,7 @@ namespace RansomwareGame
         private ProgressBar progressBar1;
         private Timer timer1;
         private IContainer components;
+        private Label label2;
         private DateTimePicker dateTimePicker1;
 
         public Form4()
@@ -31,17 +32,19 @@ namespace RansomwareGame
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form4));
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // dateTimePicker1
             // 
             this.dateTimePicker1.Font = new System.Drawing.Font("Comic Sans MS", 10F);
-            this.dateTimePicker1.Location = new System.Drawing.Point(311, 388);
+            this.dateTimePicker1.Location = new System.Drawing.Point(570, 311);
             this.dateTimePicker1.MinDate = new System.DateTime(1970, 1, 1, 0, 0, 0, 0);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.ShowUpDown = true;
@@ -55,7 +58,7 @@ namespace RansomwareGame
             this.button1.Font = new System.Drawing.Font("Comic Sans MS", 10F);
             this.button1.Location = new System.Drawing.Point(12, 636);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(840, 34);
+            this.button1.Size = new System.Drawing.Size(1321, 34);
             this.button1.TabIndex = 2;
             this.button1.Text = "Submit";
             this.button1.UseVisualStyleBackColor = true;
@@ -75,7 +78,7 @@ namespace RansomwareGame
             // 
             this.progressBar1.Location = new System.Drawing.Point(78, 69);
             this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(711, 23);
+            this.progressBar1.Size = new System.Drawing.Size(1189, 23);
             this.progressBar1.TabIndex = 4;
             this.progressBar1.Click += new System.EventHandler(this.progressBar1_Click);
             // 
@@ -83,14 +86,28 @@ namespace RansomwareGame
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Comic Sans MS", 12F);
+            this.label2.Location = new System.Drawing.Point(366, 412);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(651, 92);
+            this.label2.TabIndex = 5;
+            this.label2.Text = resources.GetString("label2.Text");
+            this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
             // Form4
             // 
-            this.ClientSize = new System.Drawing.Size(864, 767);
+            this.ClientSize = new System.Drawing.Size(1345, 767);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dateTimePicker1);
             this.Name = "Form4";
+            this.Text = "When did you make that file again?";
+            this.Load += new System.EventHandler(this.Form4_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -143,6 +160,11 @@ namespace RansomwareGame
         }
 
         private void progressBar1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form4_Load(object sender, EventArgs e)
         {
 
         }

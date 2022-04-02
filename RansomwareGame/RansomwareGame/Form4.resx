@@ -120,4 +120,10 @@
   <metadata name="timer1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
+  <data name="label2.Text" xml:space="preserve">
+    <value>All right! Time to clear up some space around here. All right here's the game:
+If you can remeber when you created this file it will be unencrypted, if not, well
+have fun trying to recover a still encrypted file. Just enter the date the listed file was 
+created in the box above, and have fun getting to the right date  &gt;;)</value>
+  </data>
 </root>
