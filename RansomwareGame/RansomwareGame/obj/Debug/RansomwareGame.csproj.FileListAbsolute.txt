@@ -21,3 +21,9 @@ C:\Users\Malware host\Documents\HackathonSpring2022\RansomwareGame\RansomwareGam
 C:\Users\Malware host\Documents\HackathonSpring2022\RansomwareGame\RansomwareGame\RansomwareGame\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 C:\Users\Malware host\Documents\HackathonSpring2022\RansomwareGame\RansomwareGame\RansomwareGame\bin\Debug\System.Text.Encoding.CodePages.xml
 C:\Users\Malware host\Documents\HackathonSpring2022\RansomwareGame\RansomwareGame\RansomwareGame\obj\Debug\RansomwareGame.csproj.CopyComplete
+C:\Users\Malware host\Documents\HackathonSpring2022\RansomwareGame\RansomwareGame\RansomwareGame\obj\Debug\RansomwareGame.Form2.resources
+C:\Users\Malware host\Documents\HackathonSpring2022\RansomwareGame\RansomwareGame\RansomwareGame\obj\Debug\Interop.WMPLib.dll
+C:\Users\Malware host\Documents\HackathonSpring2022\RansomwareGame\RansomwareGame\RansomwareGame\obj\Debug\AxInterop.WMPLib.dll
+C:\Users\Malware host\Documents\HackathonSpring2022\RansomwareGame\RansomwareGame\RansomwareGame\obj\Debug\RansomwareGame.csproj.ResolveComReference.cache
+C:\Users\Malware host\Documents\HackathonSpring2022\RansomwareGame\RansomwareGame\RansomwareGame\bin\Debug\Interop.WMPLib.dll
+C:\Users\Malware host\Documents\HackathonSpring2022\RansomwareGame\RansomwareGame\RansomwareGame\bin\Debug\AxInterop.WMPLib.dll

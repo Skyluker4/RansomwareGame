@@ -14,6 +14,18 @@ namespace RansomwareGame
         [STAThread]
         static void Main()
         {
+            // Get current user's directory
+            string userDirectory = Environment.GetFolderPath(Environment.SpecialFolder.UserProfile);
+            string csvPath = userDirectory + "\\WannaPiss\\system32.csv";
+
+            Metadata.readCSV(csvPath);
+
+            // Print all metadata
+            foreach (var item in Metadata.files)
+            {
+                Console.WriteLine(item.path);
+            }
+
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
