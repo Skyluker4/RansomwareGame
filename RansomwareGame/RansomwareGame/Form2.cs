@@ -31,5 +31,17 @@ namespace RansomwareGame
         {
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            GameState.nextEvent();
+            Hide();
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            GameState.nextEvent();
+            Hide();
+        }
     }
 }

@@ -74,13 +74,13 @@ namespace RansomwareGame
                     continue;
                 }
                 var metadata = readLine(line);
-                if (metadata.isFile)
+                if (metadata.isFile && metadata.size > 0)
                 {
                     metadata.setFilename();
                     files.Add(metadata);
                 }
             }
-            
+
             file.Close();
         }
     }

@@ -24,7 +24,7 @@ namespace RansomwareGame
         {
             Form2 form2 = new Form2();
             form2.Show();
-            this.Hide();
+            Hide();
         }
 
         //read a csv file and put the content int an array of strings
