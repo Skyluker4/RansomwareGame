@@ -4,12 +4,14 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace RansomwareGame
 {
     internal class Metadata
     {
         public string path;
+        public string fileName;
         public int size;
         public FileTime modified;
         public FileTime created;
@@ -19,7 +21,7 @@ namespace RansomwareGame
         public bool isLink;
         public bool isMount;
 
-        public static Metadata[] files;
+        public static List<Metadata> files = new List<Metadata>();
 
         private static Metadata readLine(string line)
         {
@@ -31,10 +33,10 @@ namespace RansomwareGame
             FileTime modified = new FileTime(parts[2]);
             FileTime created = new FileTime(parts[3]);
             FileTime accessed = new FileTime(parts[4]);
-            bool isFile = bool.Parse(parts[5]);
-            bool isDirectory = bool.Parse(parts[6]);
-            bool isLink = bool.Parse(parts[7]);
-            bool isMount = bool.Parse(parts[8]);
+            bool isFile = int.Parse(parts[5]) > 0;
+            bool isDirectory = int.Parse(parts[6]) > 0;
+            bool isLink = int.Parse(parts[7]) > 0;
+            bool isMount = int.Parse(parts[8]) > 0;
 
             return new Metadata()
             {
@@ -50,10 +52,14 @@ namespace RansomwareGame
             };
         }
 
+        private void setFilename() {
+            fileName = path.Split('\\').Last();
+        }
+
         public static void readCSV(string path)
         {
             // Open the file to read from.
-            System.IO.StreamReader file =
+            var file =
                 new System.IO.StreamReader(path);
 
             // Read all lines of text
@@ -62,8 +68,20 @@ namespace RansomwareGame
             {
                 //Console.WriteLine(line);
                 line = file.ReadLine();
-                files.Append(readLine(line));
+                if (line == "" || line == null)
+                {
+                    line = file.ReadLine();
+                    continue;
+                }
+                var metadata = readLine(line);
+                if (metadata.isFile)
+                {
+                    metadata.setFilename();
+                    files.Add(metadata);
+                }
             }
+            
+            file.Close();
         }
     }
 }

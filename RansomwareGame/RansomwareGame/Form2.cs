@@ -15,23 +15,21 @@ namespace RansomwareGame
         public Form2()
         {
             InitializeComponent();
-            axWindowsMediaPlayer1.URL = @"C:\Users\Malware host\sweating.mp4";
-        }
-        
-        
-
-        //Send the user to the next form when the timer gets to zero
-        private void timer_Tick(object sender, EventArgs e)
-        {
-            Form3 form3 = new Form3();
-            form3.Show();
-            this.Hide();
         }
 
-
-        private void axWindowsMediaPlayer1_Enter_1(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-            axWindowsMediaPlayer1.URL = @"C:\Users\Malware host\sweating.mp4";
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
